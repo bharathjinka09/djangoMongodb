@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+{% extends 'base.html' %}
+	
 	{% block content %}
 		{% for post in posts %}
-			{{post.title}}
-			{{post.description}}
+			<b>{{post.title}}</b> <br>
+			{{post.description}} <br>
 
 		{% endfor %}
 
 	{% endblock %}
-</body>
-</html>
